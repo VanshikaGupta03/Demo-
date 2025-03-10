@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .invoice-container { max-width: 600px; margin: auto; padding: 20px; border: 1px solid #ddd; }
+        h2 { text-align: center; }
+        .invoice-header, .invoice-details, .invoice-footer { margin-bottom: 20px; }
+        table { width: 100%; border-collapse: collapse; }
+        table, th, td { border: 1px solid black; }
+        th, td { padding: 8px; text-align: left; }
+        .text-right { text-align: right; }
+    </style>
+</head>
+<body>
+    <div class="invoice-container">
+        <h2>Invoice</h2>
+        <div class="invoice-header">
+            <p><strong>Invoice #:</strong> 12345</p>
+            <p><strong>Date:</strong> YYYY-MM-DD</p>
+            <p><strong>Customer Name:</strong> John Doe</p>
+        </div>
+        <div class="invoice-details">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Product 1</td>
+                        <td>2</td>
+                        <td>$10.00</td>
+                        <td>$20.00</td>
+                    </tr>
+                    <tr>
+                        <td>Product 2</td>
+                        <td>1</td>
+                        <td>$15.00</td>
+                        <td>$15.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="invoice-footer text-right">
+            <p><strong>Grand Total:</strong> $35.00</p>
+        </div>
+    </div>
+</body>
+</html>
